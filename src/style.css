@@ -21,8 +21,23 @@
   #homepage-child-boxs p {
     font-size: 20px;
   }
+  #btn-main a {
+    width: 110px;
+  }
+  #btn-main button {
+    width: 110px;
+  }
 }
-
+@media (min-width: 442px) {
+  #btn-main a {
+    width: 125px;
+    font-size: 12px;
+  }
+  #btn-main button {
+    width: 125px;
+    font-size: 12px;
+  }
+}
 .menu.show {
   display: block;
   position: absolute;
@@ -69,15 +84,15 @@
     top: 5px;
     right: 20%;
   }
-  @media (max-width: 380px) {
-    #navimgtwo {
-      width: 20px;
-      position: absolute;
-      top: 5px;
-      right: 45%;
-    }
-  }
 }
+/* @media (max-width: 380px) {
+  #navimgtwo {
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    right: 45%;
+  }
+} */
 
 #showl {
   display: none;
@@ -102,6 +117,14 @@
   }
   #showl li img {
     width: 30px;
+  }
+  #btn-main a {
+    width: 170px;
+    font-size: 15px;
+  }
+  #btn-main button {
+    width: 170px;
+    font-size: 15px;
   }
 }
 @media (min-width: 720px) {
@@ -131,6 +154,14 @@
   }
   #homepage-child-boxs p {
     font-size: 21px;
+  }
+  #btn-main a {
+    width: 200px;
+    font-size: 17px;
+  }
+  #btn-main button {
+    width: 200px;
+    font-size: 17px;
   }
 }
 @media (min-width: 952px) {
@@ -242,6 +273,14 @@
   #section-firstpage-one {
     width: 70%;
   }
+  #btn-main a {
+    width: 170px;
+    font-size: 17px;
+  }
+  #btn-main button {
+    width: 170px;
+    font-size: 17px;
+  }
 }
 @media (min-width: 1450px) {
   #homepage {
@@ -297,11 +336,11 @@
     width: 190%;
   }
 }
-@media (min-width: 420px) {
+/* @media (min-width: 420px) {
   #iddone {
     width: 200%;
   }
-}
+} */
 
 @media (min-width: 420px) {
   #iddone {
