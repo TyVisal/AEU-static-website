@@ -11,6 +11,8 @@ export default defineConfig({
         login: "loginpage.html",
         student: "studentpage.html",
         fgpassword: "fgpassword.html",
+        subject: "subject.html",
+        invite: "navlink/invite.html",
       },
     },
   },

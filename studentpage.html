@@ -33,8 +33,8 @@
         <p class="font-prosto text-[12px]">AEU Mobile</p>
       </div>
       <div id="mainul">
-        <ul id="showl" class="flex gap-[1rem]">
-          <li>
+        <ul id="showl" class="flex gap-[1rem] font-battambang">
+          <li data-lang="km" class="lang-flag">
             <img
               id="navimgone"
               class="w-[35px]"
@@ -42,7 +42,7 @@
               alt=""
             />
           </li>
-          <li>
+          <li data-lang="en" class="lang-flag">
             <img
               id="navimgtwo"
               class="w-[35px]"
@@ -50,7 +50,7 @@
               alt=""
             />
           </li>
-          <li>
+          <li data-lang="zh" class="lang-flag">
             <img
               id="navimgthree"
               class="w-[35px]"
@@ -59,12 +59,20 @@
             />
           </li>
 
-          <li>ការអញ្ចើញ</li>
-          <li>មុខវិជ្ចា</li>
-          <li>វគ្គសិសក្សា</li>
-          <li>ប្រលង</li>
-          <li>ប្រវត្តិរូប</li>
-          <li>ចេកចាញ</li>
+          <li>
+            <a href="navlink/invite.html" data-i18n="invite">ការអញ្ចើញ</a>
+          </li>
+          <li>
+            <a href="navlink/curriculum.html" data-i18n="lettion">មុខវិជ្ចា</a>
+          </li>
+          <li>
+            <a href="navlink/course.html" data-i18n="turn">វគ្គសិសក្សា</a>
+          </li>
+          <li><a href="navlink/exam.html" data-i18n="exam">ប្រលង</a></li>
+          <li>
+            <a href="navlink/profile.html" data-i18n="profile">ប្រវត្តិរូប</a>
+          </li>
+          <li><a href="./navlink/logout.html" data-i18n="logout">ចេកចាញ</a></li>
           <li>
             <i
               class="fa-solid fa-question"
@@ -97,96 +105,122 @@
               ឈ្មោះ : <span class="font-moul">ទី​​​​ វិសាល</span>
             </div>
             <div id="pr-main-chtwo" class="font-freehand">
-              អត្តលេខ : <span class="font-bold">65709</span>
+              អត្តលេខ : <span class="font-bold">95948</span>
             </div>
           </div>
         </div>
         <div class="w-[80%] h-[0.5vh] bg-gray-500"></div>
-        <div
+
+        <a
+          href="./navlink/profile.html"
           id="iddtwo"
           class="absolute bottom-5 right-10 text-[12px] font-angkor text-blue-900"
         >
           ប្រវត្តិរូប
-        </div>
+        </a>
       </div>
 
       <!-- ____________________________ -->
+      <a href=""></a>
 
       <div
         id="section-firstpage-two"
         class="grid grid-cols-2 justify-center justify-items-center items-center gap-[1rem] w-[80%] font-battambang"
       >
-        <div
+        <!-- <a href=""></a> -->
+
+        <a
+          href="./navlink/invite.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/invite.png" alt="" />
           <p>ទទួលការអញ្ជើញ</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="qr.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/qr.png" alt="" />
           <p>ស្មែនវត្តមាន</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="./navlink/curriculum.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/lesson.png" alt="" />
           <p>មេរៀន</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href=""
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/Rating.png" alt="" />
           <p>រាយតម្លៃគុណភាព</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="./navlink/exam.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/exam.png" alt="" />
           <p>ការប្រឡង</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href=""
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/Poll.png" alt="" />
           <p>ជំរឿលោតី</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="clrHomePage/attendance.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/atten.png" alt="" />
           <p>ប្រតិបត្តិ-វត្តមាន</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="clrHomePage/score.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/Score.png" alt="" />
           <p>ប្រតិបត្តិ-ពិន្ទុ</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="clrHomePage/paid.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/payment.png" alt="" />
           <p>ការបង់ប្រាក់</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="clrHomePage/support.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
           <img class="w-[50px]" src="src/assets/homepage/support.png" alt="" />
           <p>ទំនាក់ទំនងបញ្ហា</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href=""
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
@@ -196,8 +230,10 @@
             alt=""
           />
           <p>សេចក្ដីជូនដំណឹងព័ត៌មាន</p>
-        </div>
-        <div
+        </a>
+
+        <a
+          href="clrHomePage/promotion.html"
           id="homepage-child-boxs"
           class="bg-gray-500 rounded-[1rem] flex justify-center items-center flex-col w-[100%] h-[15vh]"
         >
@@ -207,14 +243,15 @@
             alt=""
           />
           <p>ប្រម៉ូសិន</p>
-        </div>
+        </a>
       </div>
     </section>
-    <footer
-      class="mt-[10%] flex justify-center items-center flex-col gap-[1.5rem]"
+    <div
+      class="mt-[50px] mb-[15px] h-[3vh] bg-gray-400 text-gray-600 mx-[5%] text-[14px] flex items-center gap-[0.5rem] px-[10px] font-battambang text-[17px]"
     >
-      <div class="bg-gray-100 w-[80%] mb-[20px]">ទំព៏រដើម</div>
-    </footer>
+      <a class="cursor-pointer" href="studentpage.html ">ទំព័រដើម</a>
+    </div>
     <script type="module" src="src/main.js"></script>
+    <script type="module" src="./clrHomePage/translte.js"></script>
   </body>
 </html>

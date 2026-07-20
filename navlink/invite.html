@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/fonts.css" /> -->
+
+    <link rel="stylesheet" href="/navlink/style/invite.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Angkor&family=Battambang:wght@400;700&family=Moul&family=Prosto+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex justify-center items-center flex-col">
+    <nav
+      id="navv"
+      class="bg-gray-600 text-white flex justify-between items-center w-[100%] h-[8vh] fixed top-0 left-0 z-50"
+    >
+      <div class="flex justify-center items-center gap-[1rem] ml-[15%]">
+        <a href=""
+          ><img class="w-[30px]" src="../src/assets/navbar-img/logo.png" alt=""
+        /></a>
+        <p class="font-prosto text-[12px]">AEU Mobile</p>
+      </div>
+      <div id="mainul">
+        <ul id="showl" class="flex gap-[1rem] font-battambang">
+          <li data-lang="km" class="lang-flag">
+            <img
+              id="navimgone"
+              class="w-[35px]"
+              src="../src/assets/navbar-img/cambodia.png"
+              alt=""
+            />
+          </li>
+          <li data-lang="en" class="lang-flag">
+            <img
+              id="navimgtwo"
+              class="w-[35px]"
+              src="../src/assets/navbar-img/english.png"
+              alt=""
+            />
+          </li>
+          <li data-lang="zh" class="lang-flag">
+            <img
+              id="navimgthree"
+              class="w-[35px]"
+              src="../src/assets/navbar-img/china.png"
+              alt=""
+            />
+          </li>
+
+          <li><a href="invite.html" data-i18n="invite">ការអញ្ជើញ</a></li>
+          <li><a href="curriculum.html" data-i18n="lettion">មុខវិជ្ជា</a></li>
+          <li><a href="course.html" data-i18n="turn">វគ្គសិសក្សា</a></li>
+          <li><a href="exam.html" data-i18n="exam">ប្រឡង</a></li>
+          <li><a href="profile.html" data-i18n="profile">ប្រវត្តិរូប</a></li>
+          <li><a href="logout.html" data-i18n="logout">ចាកចេញ</a></li>
+          <li>
+            <i
+              class="fa-solid fa-question"
+              style="color: rgb(255, 255, 255)"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <button id="btnl">
+        <i class="bi bi-list text-[30px]"></i>
+      </button>
+    </nav>
+    <div id="in-main-939" class="mt-[150px]">
+      <h1 class="font-moul lg:text-[20px]">ការអញ្ចើញ</h1>
+      <div class="w-full h-[0.3vh]"></div>
+      <div class="flex justify-end items-center gap-[8px] mb-[10px]">
+        <label class="text-gray-400 font-battambang" for="search"
+          >Search:</label
+        >
+        <input
+          type="text"
+          id="search"
+          class="border border-gray-300 pl-[2px]​ font-medium"
+        />
+      </div>
+      <table>
+        <thead>
+          <tr class="font-battambang font-bold lg:text-[17px]">
+            <th>ថ្ងៃស្នើសុំ</th>
+            <th>ថ្ងៃយល់ព្រម</th>
+            <th class=" ">សាស្ត្រាចារ្យ</th>
+            <th class="hide-one-tr">ផ្នែកសិក្សា</th>
+            <th class="hide-one-tr">ជំនាញ</th>
+            <th class="hide-one-tr"></th>
+          </tr>
+        </thead>
+        <tbody class="font-battambang lg:text-[17px]">
+          <tr class="log-row">
+            <!-- <div><img class="w-[10px]" src="/src/assets/add.png" alt="" /></div> -->
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-07-05 00:21:42
+            </td>
+            <td>2026-07-05 22:06:10</td>
+            <td>Thouk Lyheang</td>
+            <td class="hide-one-tr">
+              Online (1h00PM to 3h50PM) វិទ្យាសាស្ត្រកុំព្យូទ័រ
+              និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម ១&២ ឆ្នាំទី៤ ឆមាសទី១
+              វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">Software Project Management</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> Online (1h00PM to 3h50PM)
+                  វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧
+                  ក្រុម ១&២ ឆ្នាំទី៤ ឆមាសទី១ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> Software Project Management</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-07-05 00:19:28
+            </td>
+            <td>2026-07-05 22:05:19</td>
+            <td>លិន សារាម</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២
+              ឆ្នាំទី៤ ឆមាសទី១ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">OS Open Source</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២ ឆ្នាំទី៤ ឆមាសទី១
+                  វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> OS Open Source</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-07-05 00:19:10
+            </td>
+            <td>2026-07-05 22:05:15</td>
+            <td class=" ">LAY Thou</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២
+              ឆ្នាំទី៤ ឆមាសទី១ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">Management Information System</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២ ឆ្នាំទី៤ ឆមាសទី១
+                  វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> Management Information System</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-07-05 00:18:35
+            </td>
+            <td>2026-07-05 22:05:01</td>
+            <td class=" ">ឡុក ចាន់ថា</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២
+              ឆ្នាំទី៤ ឆមាសទី១ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">E-Commerce</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២ ឆ្នាំទី៤ ឆមាសទី១
+                  វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> E-Commerce</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-07-05 00:18:04
+            </td>
+            <td>2026-07-05 22:04:40</td>
+            <td class=" ">សិត បូរិន</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២
+              ឆ្នាំទី៤ ឆមាសទី១ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">Research Methodology</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២ ឆ្នាំទី៤ ឆមាសទី១
+                  វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> Research Methodology</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-07-05 00:17:14
+            </td>
+            <td>2026-07-05 22:03:44</td>
+            <td class=" ">ធីវ សារុន</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២
+              ឆ្នាំទី៤ ឆមាសទី១ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">Cisco Network Course 2-A</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២ ឆ្នាំទី៤ ឆមាសទី១
+                  វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> Cisco Network Course 2-A</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-02-10 15:20:01
+            </td>
+            <td>2026-05-02 16:20:05</td>
+            <td class="">KEO Tongheng</td>
+            <td class="hide-one-tr">
+              Online (1h00PM to 3h50PM) វិទ្យាសាស្ត្រកុំព្យូទ័រ
+              និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៨ ក្រុម២ ឆ្នាំទី២ ឆមាសទី១
+              ថ្នាក់វេនព្រឹក បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">Data Structure and Algorithms in C/C++</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> Online (1h00PM to 3h50PM)
+                  វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៨
+                  ក្រុម២ ឆ្នាំទី២ ឆមាសទី១ ថ្នាក់វេនព្រឹក បរិញ្ញាបត្រ
+                </p>
+                <p>
+                  <strong>ជំនាញ</strong> Data Structure and Algorithms in C/C++
+                </p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-02-10 14:23:03
+            </td>
+            <td>2026-02-12 09:07:36</td>
+            <td class="">NITH Laksmey</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ ជំនាន់ទី២៧ ក្រុម២ ឆ្នាំទី៣ ឆមាសទី២
+              វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">Statistical for Computer II</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  ជំនាន់ទី២៧ ក្រុម២ ឆ្នាំទី៣ ឆមាសទី២ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> Statistical for Computer II</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-02-10 14:16:48
+            </td>
+            <td>2026-02-12 09:06:43</td>
+            <td class=" ">លិន សារាម</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២
+              ឆ្នាំទី៣ ឆមាសទី២ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">OS Open Source</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២ ឆ្នាំទី៣ ឆមាសទី២
+                  វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> OS Open Source</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="log-row">
+            <td id="td" class="flex justify-center items-center gap-[10px]">
+              <div id="in-add">
+                <img
+                  class="row-icon w-[15px]"
+                  src="/src/assets/add.png"
+                  alt=""
+                />
+              </div>
+              2026-02-10 14:16:27
+            </td>
+            <td>2026-02-12 07:57:13</td>
+            <td class=" ">ធឿន ភក្តី</td>
+            <td class="hide-one-tr">
+              វិទ្យាសាស្ត្រកុំព្យូទ័រ និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២
+              ឆ្នាំទី៣ ឆមាសទី២ វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+            </td>
+            <td class="hide-one-tr">Advanced Internet Programming</td>
+            <td class="hide-one-tr">ជោគជ័យ</td>
+          </tr>
+
+          <tr class="detail-row hidden">
+            <td colspan="6">
+              <div class="p-4 bg-gray-50">
+                <p>
+                  <strong>ថ្នាក់សិក្សា</strong> វិទ្យាសាស្ត្រកុំព្យូទ័រ
+                  និងបច្ចេកវិទ្យាព័ត៌មាន ជំនាន់ទី២៧ ក្រុម១&២ ឆ្នាំទី៣ ឆមាសទី២
+                  វេនព្រឹក ថ្នាក់បរិញ្ញាបត្រ
+                </p>
+                <p><strong>ជំនាញ</strong> Advanced Internet Programming</p>
+                <p>ជោគជ័យ</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="mt-[50px] mb-[15px] w-[90%] h-[3vh] bg-gray-400 text-gray-600 text-[12px] flex items-center gap-[0.5rem] px-[10px] text-[15px] font-battambang"
+    >
+      <a class="cursor-pointer" href="../studentpage.html">ទំព័រដើម</a>
+      <img class="w-[10px]" src="forward.png" alt="" />
+      <a class="cursor-pointer" href="">ការអញ្ចើញ</a>
+    </div>
+    <script type="module" src="../src/main.js"></script>
+    <script type="module" src="../clrHomePage/translte.js"></script>
+    <script type="module" src="addbtnforinv.js"></script>
+    <script type="module" src="searchfileforinvite.js"></script>
+  </body>
+</html>

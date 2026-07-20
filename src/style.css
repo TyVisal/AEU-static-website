@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "./fonts.css";
 @import "./design.css";
+/* @import "../../src/style.css"; */
+
+/* @import "../../src/style.css"; */
+
+/* @import "../../src/curriculum.css"; */
 
 .menu {
   display: none;
@@ -12,6 +17,14 @@
   }
   #homepage-child-boxs p {
     font-size: 10px;
+  }
+}
+@media (min-width: 300px) {
+  #homepage-child-boxs img {
+    width: 30px;
+  }
+  #homepage-child-boxs p {
+    font-size: 15px;
   }
 }
 @media (min-width: 400px) {
@@ -126,6 +139,9 @@
     width: 170px;
     font-size: 15px;
   }
+  #qrsctop {
+    margin-top: 150px;
+  }
 }
 @media (min-width: 720px) {
   .menu {
@@ -174,7 +190,7 @@
     padding-top: 100px;
   }
   #titleofhomepage p {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   #section-firstpage-one {
@@ -192,6 +208,9 @@
   }
   #section-firstpage-one {
     gap: 40px;
+  }
+  #qrsctop {
+    margin-top: 100px;
   }
 }
 
@@ -220,7 +239,7 @@
   #section-firstpage {
     margin-top: 100px;
   }
-  #section-firstpage-two div {
+  #section-firstpage-two a {
     height: 20vh;
   }
 }
@@ -234,7 +253,7 @@
     padding-top: 100px;
   }
   #titleofhomepage p {
-    font-size: 17px;
+    font-size: 21px;
   }
   #showl {
     gap: 20px;
