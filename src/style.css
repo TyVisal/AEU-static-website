@@ -366,7 +366,7 @@
     width: 240%;
   }
   #section-firstpage {
-    margin-top: 10;
+    margin-top: 10px;
   }
 }
 @media (min-width: 500px) {

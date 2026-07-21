@@ -64,39 +64,79 @@ document.querySelectorAll(".log-row").forEach((n) => {
 
 //paid file
 
+// const modal = document.getElementById("paymentModal");
+
+// document.querySelectorAll(".thtr-9393").forEach((row) => {
+//   row.addEventListener("click", () => {
+//     const d = row.dataset;
+
+//     document.getElementById("modalTitle").textContent =
+//       `ការបង់ប្រាក់ឆ្នាំទី ${d.year}`;
+//     document.getElementById("modalId").textContent = d.id;
+//     document.getElementById("modalAmount").textContent = d.amount;
+//     document.getElementById("modalDate").textContent = d.date;
+//     document.getElementById("modalReceptionist").textContent =
+//       `Receiptionist : ${d.receptionist}`;
+//     document.getElementById("modalDescription").textContent =
+//       `Description : ${d.description}`;
+
+//     modal.classList.remove("hidden");
+//     modal.classList.add("flex");
+//   });
+// });
+
+// function closeModal() {
+//   modal.classList.remove("flex");
+//   modal.classList.add("hidden");
+// }
+
+// document.getElementById("modalCloseX").addEventListener("click", closeModal);
+// document.getElementById("modalCloseBtn").addEventListener("click", closeModal);
+
+// // close modal when clicking the dark overlay itself
+// modal.addEventListener("click", (e) => {
+//   if (e.target === modal) closeModal();
+// });
+
+// paid file
+
 const modal = document.getElementById("paymentModal");
 
-document.querySelectorAll(".thtr-9393").forEach((row) => {
-  row.addEventListener("click", () => {
-    const d = row.dataset;
+if (modal) {
+  document.querySelectorAll(".thtr-9393").forEach((row) => {
+    row.addEventListener("click", () => {
+      const d = row.dataset;
 
-    document.getElementById("modalTitle").textContent =
-      `ការបង់ប្រាក់ឆ្នាំទី ${d.year}`;
-    document.getElementById("modalId").textContent = d.id;
-    document.getElementById("modalAmount").textContent = d.amount;
-    document.getElementById("modalDate").textContent = d.date;
-    document.getElementById("modalReceptionist").textContent =
-      `Receiptionist : ${d.receptionist}`;
-    document.getElementById("modalDescription").textContent =
-      `Description : ${d.description}`;
+      document.getElementById("modalTitle").textContent =
+        `ការបង់ប្រាក់ឆ្នាំទី ${d.year}`;
+      document.getElementById("modalId").textContent = d.id;
+      document.getElementById("modalAmount").textContent = d.amount;
+      document.getElementById("modalDate").textContent = d.date;
+      document.getElementById("modalReceptionist").textContent =
+        `Receiptionist : ${d.receptionist}`;
+      document.getElementById("modalDescription").textContent =
+        `Description : ${d.description}`;
 
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    });
   });
-});
 
-function closeModal() {
-  modal.classList.remove("flex");
-  modal.classList.add("hidden");
+  function closeModal() {
+    modal.classList.remove("flex");
+    modal.classList.add("hidden");
+  }
+
+  document.getElementById("modalCloseX").addEventListener("click", closeModal);
+  document
+    .getElementById("modalCloseBtn")
+    .addEventListener("click", closeModal);
+
+  // close modal when clicking the dark overlay itself
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
 }
-
-document.getElementById("modalCloseX").addEventListener("click", closeModal);
-document.getElementById("modalCloseBtn").addEventListener("click", closeModal);
-
-// close modal when clicking the dark overlay itself
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) closeModal();
-});
 
 // score fiel
 
