@@ -43,23 +43,45 @@ if (storebtntwo && storeultwo) {
 
 //invite.html file
 
-document.querySelectorAll(".log-row").forEach((n) => {
-  n.addEventListener("click", () => {
-    if (window.innerWidth >= 500) return;
+// document.querySelectorAll(".log-row").forEach((n) => {
+//   n.addEventListener("click", () => {
+//     if (window.innerWidth >= 500) return;
 
-    const img = n.querySelector(".row-icon");
-    const detailRow = n.nextElementSibling;
+//     const img = n.querySelector(".row-icon");
+//     const detailRow = n.nextElementSibling;
 
-    const isExpanded = img.src.includes("remove.png");
+//     const isExpanded = img.src.includes("remove.png");
 
-    if (isExpanded) {
-      img.src = img.src.replace("remove.png", "add.png");
-      detailRow.classList.add("hidden");
-    } else {
-      img.src = img.src.replace("add.png", "remove.png");
-      detailRow.classList.remove("hidden");
-    }
-  });
+//     if (isExpanded) {
+//       img.src = img.src.replace("remove.png", "add.png");
+//       detailRow.classList.add("hidden");
+//     } else {
+//       img.src = img.src.replace("add.png", "remove.png");
+//       detailRow.classList.remove("hidden");
+//     }
+//   });
+// });
+
+// invite.html toggle (works after build + after search re-renders rows)
+import addIcon from "/src/assets/add.png";
+import removeIcon from "/src/assets/remove.png";
+
+document.addEventListener("click", (e) => {
+  const row = e.target.closest(".log-row");
+  if (!row) return;
+  if (window.innerWidth >= 500) return;
+
+  const img = row.querySelector(".row-icon");
+  const detailRow = row.nextElementSibling;
+  const isExpanded = !detailRow.classList.contains("hidden");
+
+  if (isExpanded) {
+    img.src = addIcon;
+    detailRow.classList.add("hidden");
+  } else {
+    img.src = removeIcon;
+    detailRow.classList.remove("hidden");
+  }
 });
 
 //paid file
