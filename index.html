@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aeuwebsite</title>
+    <title>AEU-Elearning</title>
+    <link rel="icon" type="aeu/png" href="aeulogo.png" />
+
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="hometranslateol.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -22,15 +25,17 @@
     <nav
       class="fixed top-0 left-0 flex justify-between w-[100%] bg-gray-600 h-[10vh] items-center text-white"
     >
-      <div class="ml-[8%] flex items-center gap-[1rem] justify-center">
-        <a href=""
-          ><img class="w-[30px]" src="src/assets/navbar-img/logo.png" alt=""
+      <div
+        class="ml-[8%] flex items-center gap-[1rem] justify-center cursor-pointer"
+      >
+        <a href="index.html">
+          <img class="w-[30px]" src="src/assets/navbar-img/logo.png" alt=""
         /></a>
-        <p class="font-prosto">AEU Eleaning</p>
+        <a href="index.html"><p class="font-prosto">AEU Eleaning</p></a>
       </div>
       <div id="open" class="menu" class="mr-[8%]">
         <ul class="flex justify-center items-center gap-[2rem]">
-          <li>
+          <li data-lang="km" class="lang-flag">
             <a href=""
               ><img
                 class="w-[30px]"
@@ -38,7 +43,7 @@
                 alt=""
             /></a>
           </li>
-          <li>
+          <li data-lang="en" class="lang-flag">
             <a href=""></a
             ><img
               class="w-[30px]"
@@ -46,7 +51,7 @@
               alt=""
             />
           </li>
-          <li>
+          <li data-lang="zh" class="lang-flag">
             <a href=""
               ><img
                 class="w-[30px]"
@@ -54,9 +59,24 @@
                 alt=""
             /></a>
           </li>
-          <li><a href="" class="font-battambang">ទំព័រដើម</a></li>
           <li>
-            <a href="loginpage.html" class="font-battambang">ចូលប្រព័ន្ធ</a>
+            <a
+              href=""
+              id="index-navbar-firstpage838"
+              class="font-battambang"
+              ​​
+              data-i18n="default"
+              >ទំព័រដើម</a
+            >
+          </li>
+          <li>
+            <a
+              href="loginpage.html"
+              id="index-navbar-login-939"
+              class="font-battambang"
+              data-i18n="loginn"
+              >ចូលប្រព័ន្ធ</a
+            >
           </li>
         </ul>
       </div>
@@ -217,7 +237,10 @@
           <p class="font-angkor xl:text-[16px]">លក្ខខណ្ឌច្បាប់</p>
           <p class="w-[70px] h-[2px] bg-amber-100"></p>
         </div>
-        <ul class="mt-[10px] Google - OneDrive xl:text-[15px] text-gray-400">
+        <ul
+          id="index-footer-s3child"
+          class="mt-[10px] Google - OneDrive xl:text-[15px] text-gray-400"
+        >
           <li>- Strategic Plan 2023-2027</li>
           <li>- Strategic Plan 2018-2022</li>
           <li>- Trademark by Asia Euro University</li>
@@ -232,7 +255,10 @@
           <p class="font-angkor xl:text-[16px]">ចូលប្រព័ន្ធ</p>
           <p class="w-[50px] h-[2px] bg-amber-100"></p>
         </div>
-        <div class="mt-[10px] xl:text-[15px] text-gray-400">
+        <div
+          id="index-footer-s4child"
+          class="mt-[10px] xl:text-[15px] text-gray-400"
+        >
           <a href="loginpage.html">Click Here!</a>
         </div>
       </div>

@@ -38,7 +38,7 @@ function requestLocation() {
     (error) => {
       resultBox.style.display = "none";
       if (error.code === error.PERMISSION_DENIED) {
-        status.textContent = "Location access was blocked.";
+        status.textContent = "ការចូលប្រើទីតាំងត្រូវបានរារាំង";
       } else {
         status.textContent = "Unable to get location: " + error.message;
       }
@@ -64,7 +64,7 @@ const camStatus = document.getElementById("camStatus");
 
 function requestCamera() {
   if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-    camStatus.textContent = "Camera access is not supported by this browser.";
+    camStatus.textContent = "កម្មវិធីរុករកនេះមិនអនុញ្ញាតការចូលប្រើកាមេរ៉ាទេ។";
     return;
   }
   navigator.mediaDevices
@@ -77,7 +77,7 @@ function requestCamera() {
     .catch((err) => {
       video.style.display = "none";
       camStatus.textContent =
-        "Camera access was blocked or unavailable: " + err.message;
+        "ការចូលប្រើកាមេរ៉ាត្រូវបានរារាំង ឬមិនអាចប្រើប្រាស់បាន: " + err.message;
     });
 }
 

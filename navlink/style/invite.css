@@ -453,3 +453,24 @@ th {
     height: 40vh;
   }
 }
+#fcltwrapbox-93933main-wrap77-item a div:hover {
+  color: black;
+}
+#fcltwrapbox-93933main-wrap77-item a:hover {
+  color: rgb(61, 61, 107);
+}
+#fcltwrapbox-93933main-wrap77-item:hover {
+  background-color: rgb(231, 223, 223);
+}
+
+#contact-spanonforhover-90:hover {
+  color: rgb(102, 102, 190);
+  cursor: pointer;
+}
+#stategic-plan929800 a:hover {
+  background-color: gray;
+}
+#support-telegram-link-box-99 div:hover {
+  color: blue;
+  cursor: pointer;
+}
