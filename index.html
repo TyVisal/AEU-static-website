@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aeuwebsite</title>
+    <title>AEU-Elearning</title>
+    <link rel="icon" type="aeu/png" href="/AEU-static-website/assets/aeulogo-C9JHONp2.png" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -16,23 +18,26 @@
       href="https://fonts.googleapis.com/css2?family=Acme&family=Angkor&family=Audiowide&family=Fasthand&family=Freehand&family=Freeman&family=Frijole&family=Grenze:ital,wght@0,100..900;1,100..900&family=Khmer&family=Moul&family=Notable&family=Noto+Sans+Khmer:wght@100..900&family=Press+Start+2P&family=Prosto+One&family=Rubik+Mono+One&family=Seymour+One&family=Silkscreen:wght@400;700&family=Taprom&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/AEU-static-website/assets/modulepreload-polyfill-BJzIe6l4.js"></script>
-    <script type="module" crossorigin src="/AEU-static-website/assets/main-Bc3dg8Ao.js"></script>
-    <link rel="stylesheet" crossorigin href="/AEU-static-website/assets/style-DqSzf1Y7.css">
+    <script type="module" crossorigin src="/AEU-static-website/assets/index-D4BL_Nzm.js"></script>
+    <link rel="modulepreload" crossorigin href="/AEU-static-website/assets/modulepreload-polyfill-BJzIe6l4.js">
+    <link rel="modulepreload" crossorigin href="/AEU-static-website/assets/main-CpNGcwE7.js">
+    <link rel="stylesheet" crossorigin href="/AEU-static-website/assets/style-DCQ-wb-l.css">
   </head>
   <body>
     <nav
       class="fixed top-0 left-0 flex justify-between w-[100%] bg-gray-600 h-[10vh] items-center text-white"
     >
-      <div class="ml-[8%] flex items-center gap-[1rem] justify-center">
-        <a href=""
-          ><img class="w-[30px]" src="/AEU-static-website/assets/logo-BEqlP-37.png" alt=""
+      <div
+        class="ml-[8%] flex items-center gap-[1rem] justify-center cursor-pointer"
+      >
+        <a href="index.html">
+          <img class="w-[30px]" src="/AEU-static-website/assets/logo-BEqlP-37.png" alt=""
         /></a>
-        <p class="font-prosto">AEU Eleaning</p>
+        <a href="index.html"><p class="font-prosto">AEU Eleaning</p></a>
       </div>
       <div id="open" class="menu" class="mr-[8%]">
         <ul class="flex justify-center items-center gap-[2rem]">
-          <li>
+          <li data-lang="km" class="lang-flag">
             <a href=""
               ><img
                 class="w-[30px]"
@@ -40,7 +45,7 @@
                 alt=""
             /></a>
           </li>
-          <li>
+          <li data-lang="en" class="lang-flag">
             <a href=""></a
             ><img
               class="w-[30px]"
@@ -48,7 +53,7 @@
               alt=""
             />
           </li>
-          <li>
+          <li data-lang="zh" class="lang-flag">
             <a href=""
               ><img
                 class="w-[30px]"
@@ -56,9 +61,24 @@
                 alt=""
             /></a>
           </li>
-          <li><a href="" class="font-battambang">ទំព័រដើម</a></li>
           <li>
-            <a href="loginpage.html" class="font-battambang">ចូលប្រព័ន្ធ</a>
+            <a
+              href=""
+              id="index-navbar-firstpage838"
+              class="font-battambang"
+              ​​
+              data-i18n="default"
+              >ទំព័រដើម</a
+            >
+          </li>
+          <li>
+            <a
+              href="loginpage.html"
+              id="index-navbar-login-939"
+              class="font-battambang"
+              data-i18n="loginn"
+              >ចូលប្រព័ន្ធ</a
+            >
           </li>
         </ul>
       </div>
@@ -219,7 +239,10 @@
           <p class="font-angkor xl:text-[16px]">លក្ខខណ្ឌច្បាប់</p>
           <p class="w-[70px] h-[2px] bg-amber-100"></p>
         </div>
-        <ul class="mt-[10px] Google - OneDrive xl:text-[15px] text-gray-400">
+        <ul
+          id="index-footer-s3child"
+          class="mt-[10px] Google - OneDrive xl:text-[15px] text-gray-400"
+        >
           <li>- Strategic Plan 2023-2027</li>
           <li>- Strategic Plan 2018-2022</li>
           <li>- Trademark by Asia Euro University</li>
@@ -234,7 +257,10 @@
           <p class="font-angkor xl:text-[16px]">ចូលប្រព័ន្ធ</p>
           <p class="w-[50px] h-[2px] bg-amber-100"></p>
         </div>
-        <div class="mt-[10px] xl:text-[15px] text-gray-400">
+        <div
+          id="index-footer-s4child"
+          class="mt-[10px] xl:text-[15px] text-gray-400"
+        >
           <a href="loginpage.html">Click Here!</a>
         </div>
       </div>
